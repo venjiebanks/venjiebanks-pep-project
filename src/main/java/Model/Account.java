@@ -19,6 +19,7 @@ public class Account {
      * A password for this account (must be over 4 characters)
      */
     public String password;
+    public Object getUsername;
     /**
      * A default, no-args constructor, as well as correctly formatted getters and setters, are needed for
      * Jackson Objectmapper to work.

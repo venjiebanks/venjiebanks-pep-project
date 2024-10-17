@@ -1,4 +1,8 @@
 import Controller.SocialMediaController;
+import DAO.AccountDAO;
+import DAO.MessageDAO;
+import Service.AccountService;
+import Service.MessageService;
 import io.javalin.Javalin;
 
 /**
@@ -7,6 +11,9 @@ import io.javalin.Javalin;
  */
 public class Main {
     public static void main(String[] args) {
+        
+       
+
         SocialMediaController controller = new SocialMediaController();
         Javalin app = controller.startAPI();
         app.start(8080);
